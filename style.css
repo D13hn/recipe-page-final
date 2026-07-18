@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+/*-------------------------------------------------*/
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+/*-------------------------------------------------*/
+
+
+/*       Colors        */
+
+
+/*-------------------------------------------------*/
+:root {
+        --font-heading: "Young Serif", serif;
+        --font-body: "Outfit", sans-serif;
+        --White: hsl(0, 0%, 100%);
+        --Stone-100: hsl(30, 54%, 90%);
+        --Stone-150: hsl(30, 18%, 87%);
+        --Stone-600: hsl(30, 10%, 34%);
+        --Stone-900: hsl(24, 5%, 18%);
+        --Brown-800: hsl(14, 45%, 36%);
+        --Rose-800: hsl(332, 51%, 32%);
+        --Rose-50: hsl(330, 100%, 98%);
+}
+
+/*-------------------------------------------------*/
+
+body{
+        background-color: var(--White);
+        min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+        max-width: 650px;
+}
+
+/*-----------------------------------------*/
+
+/*    section 1    */
+
+img {
+       width: 100%;
+       display: block;
+}
+
+p {
+        font-size: 16px;
+        font-family: var(--font-body);
+        color: var(--Stone-900);
+}
+
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5 {
+        margin: 0 4rem;
+}
+
+.section-1 h1 {
+        font-family: var(--font-heading);
+        font-size: 2.25rem;
+        font-Weight: 600;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        
+}
+
+.section-1 p {
+        margin-bottom: 1.5rem;
+}
+
+/*-----------------------------------------*/        
+
+/*    section 2    */
+
+.section-2 {
+        background-color: var(--Rose-50);
+        border-radius: 9px;
+        padding: 30px 35px;
+        margin-bottom: 1.5rem;
+}
+
+.section-2 .p-2 {
+        color: var(--Rose-800);
+        font-size: 20px;
+        font-family: var(--font-body);
+        
+}
+
+.section-2 ul {
+        color: var(--Rose-800);
+        margin: 0 0.8rem;
+}
+
+.section-2 ul li {
+        padding: 9px 0;
+}
+
+.section-2 ul li p strong {
+        color: var(--Stone-900);
+        font-weight: 1000;
+}
+
+/*-----------------------------------------*/ 
+
+/*    section 3    */
+
+.section-3 h2 {
+        font-family: var(--font-heading);
+        color: var(--Brown-800);
+        margin-bottom: 1.5rem;
+}
+
+.section-3 ul {
+        margin: 0.8rem;
+}
+
+.section-3 ul li {
+        margin-bottom: 8px;
+        color: var(--Brown-800);
+        padding-left: 1rem;
+        margin-bottom: 0.5;
+}
+
+.section-3 ul li p {
+       color: var(--Stone-900);
+}
+
+hr {
+        color: var(--Stone-900);
+        margin: 2rem 0;
+}
+
+/*-----------------------------------------*/ 
+
+/*    section 4    */
+
+.section-4 h2 {
+        font-family: var(--font-heading);
+        color: var(--Brown-800);
+        margin-bottom: 1.5rem;
+}  
+
+ol li::marker {
+    font-weight: bold;             
+    color: var(--Nutmeg);         
+    font-family: var(--font-body);
+}
+.section-4 ol {
+        margin: 0 14px;
+        color: var(--Brown-800);
+        
+}
+
+.section-4 ol li {
+        padding-bottom: 7px;
+        padding-left: 1rem;             
+        margin-bottom: 0.5rem;
+}
+
+
+/*-----------------------------------------*/ 
+
+/*    section 5    */
+
+
+.section-5 h2 {
+        color: var(--Brown-800);
+        font-family: var(--font-heading);
+        margin-bottom: 1rem;
+}
+
+.section-5 p {
+        margin-bottom: 1rem;
+}
+
+
+
+/* 1. ضبط عرض الجدول بالكامل ودمج الحدود */
+.section-5 table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* 2. وضع الخط السفلي تحت الـ td (الخلايا) وليس الـ tr */
+.section-5 table td {
+    padding: 0.8rem 1rem; /* مسافة داخلية تمنع تلاصق النصوص */
+    border-bottom: 1px solid hsl(24, 5%, 90%); /* لون الخط الفاصل (اجعله فاتحاً ولطيفاً) */
+}
+
+/* 3. إلغاء الخط السفلي لآخر سطر في الجدول فقط ليتطابق مع التصميم */
+.section-5 table tr:last-child td {
+    border-bottom: none;
+}
+
+/* 4. دفع العمود الثاني (القيم والأرقام) إلى أقصى الجهة الأخرى */
+.section-5 table td:last-child {
+    text-align: center; /* يضع الأرقام فب الوسط  */
+}
+
+
+.bold-value {
+        color: var(--Brown-800);
+        font-weight: bold;
+}
+
+
+.attribution {
+        
+        font-size: 0.6875rem; text-align: center;
+        
+}
+
+
+.attribution a {
+        
+        color: hsl(228, 45%, 44%); 
+        
+}
+
+
+
+
+
+/*-------------------------------------------------*/
+@media (min-width:700px) {
+    .container {
+            margin: 5rem 7rem;
+            background-color: var(--White);
+            border-radius: 12px;
+            padding: 25px 0;
+    }
+    
+    img {
+            border-radius: 15px;
+            width: 90%;
+            margin: auto;
+    }
+    
+    body {
+           background-color: var(--Stone-100);
+           min-width: 900px;
+           margin: auto;
+    }
+    
+    .section-1,
+    .section-2,
+    .section-3,
+    .section-4,
+    .section-5{
+            margin: 2rem 3rem;
+    }
+        
+}
